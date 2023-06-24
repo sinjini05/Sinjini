@@ -15,11 +15,11 @@ const Navbar = () => {
         to="/"
         className="flex items-center gap-2"
         onClick={()=>{
-          setActive(""); //where we are on the navbar
-          window.scrollTo(0,0); //scrolls to top of page
+          setActive(""); 
+          window.scrollTo(0,0); 
         }}
         >
-        <img src={logo} alt='logo' className="w-9 h-9 object-contain" />
+        {/* <img src={logo} alt='logo' className="w-9 h-9 object-contain" /> */}
         <p 
         className="font-bold text-white cursor-pointer text-[18px] flex">
           Sinjini Sarkar
