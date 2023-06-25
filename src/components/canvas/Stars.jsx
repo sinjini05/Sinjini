@@ -7,7 +7,7 @@ const Stars = (props) => {
 
   const ref =useRef();
 
-  const sphere=random.inSphere(new Float32Array(5000),
+  const sphere=random.inSphere(new Float32Array(6000),
   { radius : 1.2 })
 
   useFrame((state,delta)=>{
@@ -28,8 +28,8 @@ const Stars = (props) => {
         />
       </Points>
     </group>
-  )
-}
+  );
+};
 
 const StarsCanvas = () => {
   return (
@@ -43,7 +43,7 @@ const StarsCanvas = () => {
 
       </Canvas>
     </div>
-  )
-}
+  );
+};
 
 export default StarsCanvas

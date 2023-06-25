@@ -23,7 +23,7 @@ const Works = () => {
     </motion.div>
 
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Works,"");
+export default SectionWrapper(Works,"project");

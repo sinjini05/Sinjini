@@ -20,9 +20,44 @@ const Contact = () => {
 
     const [loading, setLoading] =useState(false);
 
-    const handleChange=(e)=>{};
+    const handleChange=(e)=>{
+      const {name,value} =e.target;
+      setForm({ ...form, [name]: value})
+    };
 
-    const handleSubmit=(e)=>{};
+    const handleSubmit=(e)=>{
+      e.preventDefault();
+      setLoading(true);
+
+      emailjs.send(
+        'service_4evs9rs',
+        'template_6wmjiqj',
+        {
+          from_name: form.name,
+          to_name: 'Sinjini',
+          from_email: form.email,
+          to_email: 'sarkar.sinjini05@gmail.com',
+          message: form.message,
+        },
+        'rYQ9RMHuu8lJX5a7t',
+        )
+        .then(()=>{
+          setLoading(false);
+          alert('Thank you, will get back to you as soon as possible');
+          setForm({
+            name:'',
+            email:'',
+            message:'',
+          })
+        }, (error)=>{
+          setLoading(false)
+
+          console.log(error);
+
+          console.log('Something went wrong');
+        })
+
+    };
 
     return (
       <div className="xl:mt-12 xl:flex-row flex-col-reverse
@@ -112,6 +147,8 @@ const Contact = () => {
         </motion.div>
 
       </div>
+
+    
 
     )
   
