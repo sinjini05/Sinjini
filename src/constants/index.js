@@ -34,10 +34,10 @@ import {
       id: "work",
       title: "Work",
     },
-    {
-      id: "project",
-      title: "Projects",
-    },
+    // {
+    //   id: "project",
+    //   title: "Projects",
+    // },
     {
       id: "contact",
       title: "Contact",
@@ -54,11 +54,11 @@ import {
       icon: mobile,
     },
     {
-      title: "UI/UX Designer",
+      title: "Web Scraper",
       icon: backend,
     },
     {
-      title: "Web Scraper",
+      title: "UI/UX Designer",
       icon: creator,
     },
   ];
