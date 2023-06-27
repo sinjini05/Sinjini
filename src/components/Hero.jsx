@@ -16,7 +16,7 @@ const Hero = () => {
         text-white mt-10`}> Hi, I'm Sinjini! 
         </h1>
         <p className={`${styles.heroSubText} mt-3 text-white-100 `}>
-          A Web developer based out of Assam, India <br />
+          A Web developer based out of Assam, India 
           and a final-year BTech CSE Student. 
         </p >
       </div>
