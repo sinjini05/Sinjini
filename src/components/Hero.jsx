@@ -13,15 +13,15 @@ const Hero = () => {
         </div>
       <div >
         <h1 className={`${styles.heroHeadText}
-        text-white mt-10`}> Hi, I'm Sinjini! 
+         mt-10 items-center flex ml-5`}> Hi, I'm Sinjini! 
         </h1>
-        <p className={`${styles.heroSubText} mt-3 text-white-100 `}>
+        <p className={`${styles.heroSubText} mt-4 max-w-2xl items-center justify-center flex  `}>
           A Web developer based out of Assam, India 
           and a final-year BTech CSE Student. 
         </p >
       </div>
       </div>
-      <div className='absolute inset-0 top-[420px] max-w-7xl mx-auto flex flex-row items-start justify-center mt-20'>
+      <div className='absolute inset-0 top-[390px] max-w-7xl mx-auto flex flex-row items-start justify-center mt-20'>
 
       <div className='items-center flex justify-center'>
       <div className='flex '>
